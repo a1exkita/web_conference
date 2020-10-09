@@ -3,8 +3,9 @@ const videoGrid = document.getElementById('video-grid')
 
 const myPeer = new Peer(undefined, {
   sercure: true,  
-  host: 'obscure-escarpment-32070.herokuapp.com',
-  port: 443
+  host: '/',
+  port: 9000,
+  path: '/myapp'
 })
 
 
