@@ -3,7 +3,7 @@ const videoGrid = document.getElementById('video-grid')
 
 const myPeer = new Peer(undefined, {
   sercure: true,  
-  host: '/',
+  host: 'pure-badlands-42965.herokuapp.com',
   port: 9000,
   path: '/myapp'
 })
