@@ -28,17 +28,5 @@ io.on('connection', socket => {
 
 server.listen(process.env.PORT)
 
-// const { ExpressPeerServer } = require('peer');
-// const app2 = express();
-// const http2 = require('http');
-// const server2 = http2.createServer(app2);
-// const peerServer = ExpressPeerServer(server2, {
-//   debug: true,
-//   path: '/myapp'
-// });
-
-var PeerServer = require('peer').PeerServer;
-var server2 = PeerServer({port: 8800, path: '/peerjs'});
-server2.listen()
-// app2.use('/peerjs', peerServer);
-// app2.listen(9000)
+var PeerServer = require('peer').PeerServer
+PeerServer({port: 8800, path: '/peerjs'}).listen()
